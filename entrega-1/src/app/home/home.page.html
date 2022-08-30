@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      QR Scanner UwU
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"class="background">
+
+  <div id="container">
+   
+
+    <ion-button (click)="login()"
+     color="primary">iniciar sesión 
+    </ion-button>
+
+
+    <ion-button  [routerLink]="['/registro']"
+     color="primary">Recuperar contraseña
+    </ion-button>
+
+    <ion-button  [routerLink]="['/vista-profesor']"
+     color="primary">Vista Profesor
+    </ion-button>
+
+    <ion-button  [routerLink]="['/vista-alumno']"
+     color="primary">Vista Alumno
+    </ion-button>
+
+
+
+    
+  </div>
+  
+
+</ion-content>

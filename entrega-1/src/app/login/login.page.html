@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>QR Scanner </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content mode="Android">
+   <ion-item>
+      <ion-label position="floating">Correo:</ion-label>
+      <ion-input [(ngModel)]="nombre"></ion-input>
+   </ion-item>
+   <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="edad"></ion-input>
+   </ion-item>
+   <ion-radio-group value="grape">
+    
+    <ion-item>
+      <ion-label>Alumno</ion-label>
+      <ion-radio slot="start" color="success" value="apple"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Docente</ion-label>
+      <ion-radio slot="start" color="danger" value="cherry"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+   <ion-item>
+      <ion-button (click)="grabar()">Ingreso</ion-button>
+      <ion-button [routerLink]="['/home']">Volver</ion-button>
+   </ion-item>
+   
+</ion-content>

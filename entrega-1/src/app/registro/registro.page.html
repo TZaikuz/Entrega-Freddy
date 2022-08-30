@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>QR Scanner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header>
+   <ion-toolbar>
+     
+     <ion-title>Recuperacion contraseña</ion-title>
+   </ion-toolbar>
+ </ion-header>
+ <ion-content>
+   <form>
+     <ion-item lines="full">
+       <ion-label position="floating">Email institucional</ion-label>
+       <ion-input type="email" required></ion-input>
+     </ion-item>
+     <ion-row>
+       <ion-col>
+         <ion-button (click)="presentAlert()" type="submit" color="danger" expand="block" onclick="">Mandar</ion-button>
+         <ion-button color="success" expand="block" [routerLink]="['/home']">Volver</ion-button> 
+      </ion-col>
+      
+   </ion-row>
+     
+     <small>
+       Esta recuperacion de contraseña solo podra ser usada cada 5 dias por politicas de seguridad de la empresa.
+       Gracias por su entendimiento 
+     </small>
+   </form>
+   
+ </ion-content>
