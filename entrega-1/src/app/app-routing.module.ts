@@ -31,7 +31,11 @@ const routes: Routes = [
   {
     path: 'vista-alumno',
     loadChildren: () => import('./usuarios/vista-alumno/vista-alumno.module').then( m => m.VistaAlumnoPageModule)
+  },  {
+    path: 'lista-alumnos',
+    loadChildren: () => import('./lista-alumnos/lista-alumnos.module').then( m => m.ListaAlumnosPageModule)
   },
+
 ];
 
 @NgModule({
