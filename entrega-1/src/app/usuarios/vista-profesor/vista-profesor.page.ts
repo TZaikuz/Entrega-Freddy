@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import 'animate.css';
+import { Animation } from '@ionic/angular';
+
 @Component({
   selector: 'app-vista-profesor',
   templateUrl: './vista-profesor.page.html',
@@ -13,5 +14,5 @@ export class VistaProfesorPage implements OnInit {
   }
 
 
-    
+
 }

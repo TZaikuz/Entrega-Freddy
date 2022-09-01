@@ -11,27 +11,29 @@
   <div id="container">
    
 
-    <ion-button (click)="login()"
-     color="primary">iniciar sesión 
+    <ion-button (click)="login()" (click)="animacion()">
+     Iniciar session
     </ion-button>
 
 
-    <ion-button  [routerLink]="['/registro']"
+    <ion-button (click)="animacion()"  [routerLink]="['/registro']" 
      color="primary">Recuperar contraseña
     </ion-button>
 
-    <ion-button  [routerLink]="['/vista-profesor']"
+    <ion-button (click)="animacion()"  [routerLink]="['/vista-profesor']"
      color="primary">Vista Profesor
     </ion-button>
 
-    <ion-button  [routerLink]="['/vista-alumno']"
+    <ion-button (click)="animacion()"  [routerLink]="['/vista-alumno']"
      color="primary">Vista Alumno
     </ion-button>
 
 
 
-    
+       
   </div>
+  
   
 
 </ion-content>
+  

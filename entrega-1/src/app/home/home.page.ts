@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { LoadingController, NavController } from '@ionic/angular';
 
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,20 @@ import { NavController } from '@ionic/angular';
 export class HomePage {
 
  
- constructor(private navCtrl:NavController) {}
+  constructor(private navCtrl:NavController,
+  private loadingController: LoadingController,) {}
+
+
+  async animacion() {
+    const loading = await this.loadingController.create({
+      message: 'Cargando Info <3',
+      duration: 600,
+      cssClass: 'custom-loading',
+    });
+    console.log('Pulso "boton"')
+    await loading.present();
+  }
+
 
  login(){
    
