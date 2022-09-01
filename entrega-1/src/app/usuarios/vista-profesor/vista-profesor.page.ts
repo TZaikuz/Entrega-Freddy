@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import 'animate.css';
 @Component({
   selector: 'app-vista-profesor',
   templateUrl: './vista-profesor.page.html',
@@ -12,4 +12,6 @@ export class VistaProfesorPage implements OnInit {
   ngOnInit() {
   }
 
+
+    
 }
